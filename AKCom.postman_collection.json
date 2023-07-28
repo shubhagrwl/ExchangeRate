@@ -1,0 +1,1383 @@
+{
+	"info": {
+		"_postman_id": "795e7c5d-0121-4137-afc3-0c618dd27bf3",
+		"name": "AKCom",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12140162"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Get All Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/akcom/v1/admin/users",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"akcom",
+								"v1",
+								"admin",
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/akcom/v1/admin/users",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"akcom",
+										"v1",
+										"admin",
+										"users"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Feature-Policy",
+									"value": "none"
+								},
+								{
+									"key": "Permissions-Policy",
+									"value": "default-src 'none'"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=5184000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Correlation-Id",
+									"value": "575125c3-f896-11ed-900a-18c04ddd82c1"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 11:46:55 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "42"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"unauthorized\"\n}"
+						},
+						{
+							"name": "Get All users",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/akcom/v1/admin/users",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"akcom",
+										"v1",
+										"admin",
+										"users"
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Feature-Policy",
+									"value": "none"
+								},
+								{
+									"key": "Permissions-Policy",
+									"value": "default-src 'none'"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=5184000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Correlation-Id",
+									"value": "7ff18527-f896-11ed-900a-18c04ddd82c1"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 11:48:02 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "599"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Users List\",\n    \"data\": [\n        {\n            \"id\": 2,\n            \"first_name\": \"Shubham\",\n            \"last_name\": \"Agarwal\",\n            \"email\": \"shubham.aal@gmail.com\",\n            \"password\": \"$2a$10$AtGVHnQg4RfX5x0gIbZu5uWQEvNY8XtTg.N4LSU4g/t4C34XTz.aS\",\n            \"country_code\": \"+91\",\n            \"phone\": \"9953940590\",\n            \"address\": \"\",\n            \"status\": true,\n            \"role\": \"user\",\n            \"created_at\": \"2023-05-22T17:16:31.902245Z\"\n        },\n        {\n            \"id\": 1,\n            \"first_name\": \"Admin\",\n            \"last_name\": \"User\",\n            \"email\": \"admin@orgosys.com\",\n            \"password\": \"$2a$10$.fJ56Xvu4IABh2ZbsvdPHOhKjPxR0SZxx1onjF25Ss.W/51qvZopW\",\n            \"country_code\": \"\",\n            \"phone\": \"\",\n            \"address\": \"\",\n            \"status\": true,\n            \"role\": \"admin\",\n            \"created_at\": \"2023-05-22T11:43:26.865513Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "DIsable Users",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/akcom/v1/admin/users?id=2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"akcom",
+								"v1",
+								"admin",
+								"users"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/akcom/v1/admin/users",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"akcom",
+										"v1",
+										"admin",
+										"users"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Feature-Policy",
+									"value": "none"
+								},
+								{
+									"key": "Permissions-Policy",
+									"value": "default-src 'none'"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=5184000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Correlation-Id",
+									"value": "575125c3-f896-11ed-900a-18c04ddd82c1"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 11:46:55 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "42"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"unauthorized\"\n}"
+						},
+						{
+							"name": "Disable User",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/akcom/v1/admin/users?id=2",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"akcom",
+										"v1",
+										"admin",
+										"users"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Feature-Policy",
+									"value": "none"
+								},
+								{
+									"key": "Permissions-Policy",
+									"value": "default-src 'none'"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=5184000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Correlation-Id",
+									"value": "9cfef1ef-f896-11ed-900a-18c04ddd82c1"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 11:48:51 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "54"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"User Disable Successfully\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Sign-up",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"first_name\": \"Shubham\",\n    \"last_name\":\"Agarwal\",\n    \"email\": \"shubham.aal@gmail.com\",\n    \"country_code\":\"+91\",\n    \"phone\":\"9953940590\",\n    \"password\": \"Test@123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/akcom/v1/sign-up",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"akcom",
+								"v1",
+								"sign-up"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Sign-up Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"first_name\": \"Shubham\",\n    \"last_name\":\"Agarwal\",\n    \"email\": \"shubham.aal@gmail.com\",\n    \"country_code\":\"+91\",\n    \"phone\":\"9953940590\",\n    \"password\": \"Test@123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/akcom/v1/sign-up",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"akcom",
+										"v1",
+										"sign-up"
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Feature-Policy",
+									"value": "none"
+								},
+								{
+									"key": "Permissions-Policy",
+									"value": "default-src 'none'"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=5184000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Correlation-Id",
+									"value": "9d19c401-f882-11ed-8348-18c04ddd82c1"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 09:25:38 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "54"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"User Created Successfully\"\n}"
+						},
+						{
+							"name": "Sign-up Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"first_name\": \"Shubham\",\n    \"last_name\":\"Agarwal\",\n    \"email\": \"shubham.aal@gmail.com\",\n    \"country_code\":\"+91\",\n    \"phone\":\"9953940590\",\n    \"password\": \"Test@123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/akcom/v1/sign-up",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"akcom",
+										"v1",
+										"sign-up"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Feature-Policy",
+									"value": "none"
+								},
+								{
+									"key": "Permissions-Policy",
+									"value": "default-src 'none'"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=5184000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Correlation-Id",
+									"value": "ec09ef86-f882-11ed-b6f8-18c04ddd82c1"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 09:27:50 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "51"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"internal server error\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"shubham.aal@gmail.com\",\n    \"password\": \"Test@123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/akcom/v1/login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"akcom",
+								"v1",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Login Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"shubham.aal@gmail.com\",\n    \"password\": \"Test@123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/akcom/v1/login",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"akcom",
+										"v1",
+										"login"
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Feature-Policy",
+									"value": "none"
+								},
+								{
+									"key": "Permissions-Policy",
+									"value": "default-src 'none'"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=5184000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Correlation-Id",
+									"value": "981dd320-f883-11ed-af28-18c04ddd82c1"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 09:32:46 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1259"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Login Successfully\",\n    \"data\": {\n        \"AccessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NfdXVpZCI6ImY2ZWQ4NGY3LWUzODQtNDM1MC1hMGYyLWJjOThiMWRhMDdhYSIsImF1dGhvcml6ZWQiOnRydWUsImV4cCI6MTY4NDc2NTk2NCwidXNlciI6eyJpZCI6NSwiZmlyc3RfbmFtZSI6IlNodWJoYW0iLCJsYXN0X25hbWUiOiJBZ2Fyd2FsIiwiZW1haWwiOiJzaHViaGFtLmFhbEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiIsImNvdW50cnlfY29kZSI6Iis5MSIsInBob25lIjoiOTk1Mzk0MDU5MCIsImFkZHJlc3MiOiIiLCJzdGF0dXMiOmZhbHNlLCJjcmVhdGVkX2F0IjoiMjAyMy0wNS0yMlQxNDo1Nzo0NS40MTA1MThaIn19.rsH2LxhbrTzFsmDiuv4Lpc9oUYiAQmYeQvXIIqBPJno\",\n        \"RefreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODQ3ODM5NjQsInJlZnJlc2hfdXVpZCI6ImY2ZWQ4NGY3LWUzODQtNDM1MC1hMGYyLWJjOThiMWRhMDdhYSsrc2h1YmhhbS5hYWxAZ21haWwuY29tIiwidXNlciI6eyJpZCI6NSwiZmlyc3RfbmFtZSI6IlNodWJoYW0iLCJsYXN0X25hbWUiOiJBZ2Fyd2FsIiwiZW1haWwiOiJzaHViaGFtLmFhbEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiIsImNvdW50cnlfY29kZSI6Iis5MSIsInBob25lIjoiOTk1Mzk0MDU5MCIsImFkZHJlc3MiOiIiLCJzdGF0dXMiOmZhbHNlLCJjcmVhdGVkX2F0IjoiMjAyMy0wNS0yMlQxNDo1Nzo0NS40MTA1MThaIn19.9Jp3iCf9YNgv1T_VOVvnwnoVLidIn5b5XB89OptzI9A\",\n        \"AccessUuid\": \"f6ed84f7-e384-4350-a0f2-bc98b1da07aa\",\n        \"RefreshUuid\": \"f6ed84f7-e384-4350-a0f2-bc98b1da07aa++shubham.aal@gmail.com\",\n        \"AtExpires\": 1684765964,\n        \"RtExpires\": 1684783964\n    }\n}"
+						},
+						{
+							"name": "Login Invalid Password",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"shubham.aal@gmail.com\",\n    \"password\": \"Test@1234\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/akcom/v1/login",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"akcom",
+										"v1",
+										"login"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Feature-Policy",
+									"value": "none"
+								},
+								{
+									"key": "Permissions-Policy",
+									"value": "default-src 'none'"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=5184000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Correlation-Id",
+									"value": "a46eec51-f883-11ed-af28-18c04ddd82c1"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 09:33:01 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "52"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"invalid email/password\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Profile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/akcom/v1/profile",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"akcom",
+								"v1",
+								"profile"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Profile Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/akcom/v1/profile",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"akcom",
+										"v1",
+										"profile"
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Feature-Policy",
+									"value": "none"
+								},
+								{
+									"key": "Permissions-Policy",
+									"value": "default-src 'none'"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=5184000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Correlation-Id",
+									"value": "45f56846-f885-11ed-bdca-18c04ddd82c1"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 09:44:43 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "246"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"User Profile\",\n    \"data\": {\n        \"id\": 5,\n        \"first_name\": \"Shubham\",\n        \"last_name\": \"Agarwal\",\n        \"email\": \"shubham.aal@gmail.com\",\n        \"country_code\": \"+91\",\n        \"phone\": \"9953940590\",\n        \"address\": \"\",\n        \"status\": true,\n        \"created_at\": \"2023-05-22T14:57:45.410518Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Profile",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"last_name\": \"test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/akcom/v1/profile",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"akcom",
+								"v1",
+								"profile"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Profile Success",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"last_name\": \"test\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/akcom/v1/profile",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"akcom",
+										"v1",
+										"profile"
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Feature-Policy",
+									"value": "none"
+								},
+								{
+									"key": "Permissions-Policy",
+									"value": "default-src 'none'"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=5184000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Correlation-Id",
+									"value": "513f1cef-f887-11ed-9683-18c04ddd82c1"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 22 May 2023 09:59:20 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "264"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"User Profile Updated Successfully\",\n    \"data\": {\n        \"id\": 5,\n        \"first_name\": \"Shubham\",\n        \"last_name\": \"test\",\n        \"email\": \"shubham.aal@gmail.com\",\n        \"country_code\": \"+91\",\n        \"phone\": \"9953940590\",\n        \"address\": \"\",\n        \"status\": true,\n        \"created_at\": \"2023-05-22T14:57:45.410518Z\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Exchange",
+			"item": [
+				{
+					"name": "Get Exchange",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/akcom/v1/exchange",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"akcom",
+								"v1",
+								"exchange"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Exchange Rate for single day",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/akcom/v1/exchange?date=2023-07-27",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"akcom",
+										"v1",
+										"exchange"
+									],
+									"query": [
+										{
+											"key": "date",
+											"value": "2023-07-27"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Feature-Policy",
+									"value": "none"
+								},
+								{
+									"key": "Permissions-Policy",
+									"value": "default-src 'none'"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=5184000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Correlation-Id",
+									"value": "2c09d98f-2d87-11ee-8e0b-18c04ddd82c1"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 28 Jul 2023 20:41:47 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "194"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Exchange Rates\",\n    \"data\": [\n        {\n            \"id\": 3,\n            \"exchange_date\": \"2023-07-27T00:00:00Z\",\n            \"base\": \"EUR\",\n            \"usd\": 1.097845,\n            \"eur\": 1,\n            \"gbp\": 0.858136,\n            \"created_at\": \"2023-07-29T02:10:01.479474Z\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "Get Exchange Rate for previous 10 days",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/akcom/v1/exchange",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"akcom",
+										"v1",
+										"exchange"
+									],
+									"query": [
+										{
+											"key": "date",
+											"value": "2023-07-27",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Feature-Policy",
+									"value": "none"
+								},
+								{
+									"key": "Permissions-Policy",
+									"value": "default-src 'none'"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=5184000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Correlation-Id",
+									"value": "34fc129f-2d87-11ee-8e0b-18c04ddd82c1"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 28 Jul 2023 20:42:02 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1452"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Exchange Rates\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"exchange_date\": \"2023-07-29T00:00:00Z\",\n            \"base\": \"\",\n            \"usd\": 0,\n            \"eur\": 0,\n            \"gbp\": 0,\n            \"created_at\": \"2023-07-29T02:10:00.73657Z\"\n        },\n        {\n            \"id\": 2,\n            \"exchange_date\": \"2023-07-28T00:00:00Z\",\n            \"base\": \"EUR\",\n            \"usd\": 1.102045,\n            \"eur\": 1,\n            \"gbp\": 0.857468,\n            \"created_at\": \"2023-07-29T02:10:01.1203Z\"\n        },\n        {\n            \"id\": 3,\n            \"exchange_date\": \"2023-07-27T00:00:00Z\",\n            \"base\": \"EUR\",\n            \"usd\": 1.097845,\n            \"eur\": 1,\n            \"gbp\": 0.858136,\n            \"created_at\": \"2023-07-29T02:10:01.479474Z\"\n        },\n        {\n            \"id\": 4,\n            \"exchange_date\": \"2023-07-26T00:00:00Z\",\n            \"base\": \"EUR\",\n            \"usd\": 1.107812,\n            \"eur\": 1,\n            \"gbp\": 0.856982,\n            \"created_at\": \"2023-07-29T02:10:01.839128Z\"\n        },\n        {\n            \"id\": 5,\n            \"exchange_date\": \"2023-07-25T00:00:00Z\",\n            \"base\": \"EUR\",\n            \"usd\": 1.105021,\n            \"eur\": 1,\n            \"gbp\": 0.857032,\n            \"created_at\": \"2023-07-29T02:10:02.199958Z\"\n        },\n        {\n            \"id\": 6,\n            \"exchange_date\": \"2023-07-24T00:00:00Z\",\n            \"base\": \"EUR\",\n            \"usd\": 1.10628,\n            \"eur\": 1,\n            \"gbp\": 0.863457,\n            \"created_at\": \"2023-07-29T02:10:02.607176Z\"\n        },\n        {\n            \"id\": 7,\n            \"exchange_date\": \"2023-07-23T00:00:00Z\",\n            \"base\": \"EUR\",\n            \"usd\": 1.112495,\n            \"eur\": 1,\n            \"gbp\": 0.865577,\n            \"created_at\": \"2023-07-29T02:10:02.968285Z\"\n        },\n        {\n            \"id\": 8,\n            \"exchange_date\": \"2023-07-22T00:00:00Z\",\n            \"base\": \"EUR\",\n            \"usd\": 1.113333,\n            \"eur\": 1,\n            \"gbp\": 0.866002,\n            \"created_at\": \"2023-07-29T02:10:03.332094Z\"\n        },\n        {\n            \"id\": 9,\n            \"exchange_date\": \"2023-07-21T00:00:00Z\",\n            \"base\": \"EUR\",\n            \"usd\": 1.113333,\n            \"eur\": 1,\n            \"gbp\": 0.866137,\n            \"created_at\": \"2023-07-29T02:10:03.733853Z\"\n        },\n        {\n            \"id\": 10,\n            \"exchange_date\": \"2023-07-20T00:00:00Z\",\n            \"base\": \"EUR\",\n            \"usd\": 1.113597,\n            \"eur\": 1,\n            \"gbp\": 0.865131,\n            \"created_at\": \"2023-07-29T02:10:04.097037Z\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "HealthCheck",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/akcom/v1/health-check",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"akcom",
+						"v1",
+						"health-check"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "HealthCheck",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/akcom/v1/health-check",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"akcom",
+								"v1",
+								"health-check"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self'"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Feature-Policy",
+							"value": "none"
+						},
+						{
+							"key": "Permissions-Policy",
+							"value": "default-src 'none'"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=5184000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Correlation-Id",
+							"value": "35f24ad4-f895-11ed-81e0-0242ac190003"
+						},
+						{
+							"key": "X-Dns-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 22 May 2023 11:38:45 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "63"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"version\",\n    \"data\": {\n        \"version\": \"0.0.1\"\n    }\n}"
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NfdXVpZCI6ImYwNjcxOTQwLTAxMWEtNGRiYS05Y2U5LThjNjk4ODg1YmE2YyIsImF1dGhvcml6ZWQiOnRydWUsImV4cCI6MTY5MDU5NDgwOCwidXNlciI6eyJpZCI6MSwiZmlyc3RfbmFtZSI6IkFkbWluIiwibGFzdF9uYW1lIjoiVXNlciIsImVtYWlsIjoic2h1YmhhbS5hYWxAZ21haWwuY29tIiwiY291bnRyeV9jb2RlIjoiIiwicGhvbmUiOiIiLCJhZGRyZXNzIjoiIiwic3RhdHVzIjp0cnVlLCJyb2xlIjoiYWRtaW4iLCJjcmVhdGVkX2F0IjoiMjAyMy0wNy0yOFQyMDo0MDowMC4wMjUyNTRaIn19.b_OvP_sTaFgpkiw150CLGiYn2rNzUBjmAUJ-qRAEZfE",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "0.0.0.0:9090",
+			"type": "string"
+		}
+	]
+}
